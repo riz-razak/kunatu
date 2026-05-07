@@ -8,9 +8,11 @@
 
 ## Future Domain Model
 
-- Public product: `kunatu.lk`.
-- Future API: `api.kunatu.lk`.
-- Shared DGTL services, if needed, remain under `dgtl.lk`.
+- Current public product domain: `kunatu.yan.lk`.
+- Current fallback domain: `app-jade-two-59.vercel.app`.
+- `kunatu.lk` is not in the current horizon.
+- Future API domain is deferred until an API layer exists.
+- Shared DGTL/Yan services, if needed, remain under the relevant parent infrastructure.
 
 ## Deployment Rules
 

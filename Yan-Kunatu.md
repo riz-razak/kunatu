@@ -4,7 +4,7 @@ Read this before changing the Kunatu repo.
 
 ## Project Overview
 
-`/Users/rizrazak/Code/Tools/Kunatu` is the active repository for Kunatu, a Sri Lanka weather intelligence product.
+`/Users/rizrazak/Code/Tools/Kunatu` is the active repository for Kunatu, a Sri Lanka weather intelligence product incubating under Yan public infrastructure.
 
 Kunatu is not a generic weather display. It should combine forecast data, Sri Lankan weather context, uncertainty communication, and atmospheric visualisation into a public-facing tool.
 
@@ -29,7 +29,8 @@ Start model-first:
 - MapLibre-compatible map layer for weather geography.
 - Canvas/WebGL-ready visual layer for clouds, rain particles, wind vectors, and uncertainty.
 - Vercel for early public deployment.
-- Future custom API can live at `api.kunatu.lk`.
+- Current public domain target is `kunatu.yan.lk`.
+- Future custom API domain is deferred until an API layer exists.
 
 ## Translation Policy
 

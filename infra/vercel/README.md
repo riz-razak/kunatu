@@ -21,12 +21,22 @@ Future weather/map integrations should use Vercel environment variables rather t
 
 ## Domain Plan
 
-Early deployment can use the Vercel preview/production URL.
+Kunatu is currently incubating under Yan public infrastructure.
 
-Future public domain:
+Current domains:
 
-- `kunatu.lk` for the app.
-- `api.kunatu.lk` for a future API layer if needed.
+- Primary: `kunatu.yan.lk`.
+- Fallback: `app-jade-two-59.vercel.app`.
+
+`kunatu.lk` is not in the current horizon. A future API domain should be decided only after Kunatu has a real server-side API layer.
+
+## DNS Setup
+
+For `kunatu.yan.lk`, configure DNS in the `yan.lk` zone:
+
+| Type | Name | Target | Proxy |
+|---|---|---|---|
+| CNAME | `kunatu` | `cname.vercel-dns.com` | DNS only initially |
 
 ## Deployment Rules
 

@@ -34,6 +34,13 @@ The old Google Drive Kunatu folder is defunct and is not a working directory or 
 
 Kunatu will deploy from the `app/` directory on Vercel.
 
+Current public target:
+
+- Primary: `https://kunatu.yan.lk`
+- Fallback: `https://app-jade-two-59.vercel.app`
+
+`kunatu.lk` is not in the current horizon. Kunatu is incubating under Yan public infrastructure for now.
+
 Initial Vercel settings:
 
 - Framework preset: Next.js
