@@ -36,7 +36,7 @@ For `kunatu.yan.lk`, configure DNS in the `yan.lk` zone:
 
 | Type | Name | Target | Proxy |
 |---|---|---|---|
-| CNAME | `kunatu` | `cname.vercel-dns.com` | DNS only initially |
+| CNAME | `kunatu` | `3a5d0f81cc2b2ea2.vercel-dns-017.com` | DNS only |
 
 ## Deployment Rules
 

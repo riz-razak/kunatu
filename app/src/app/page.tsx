@@ -15,11 +15,11 @@ export default async function Home({ searchParams }: { searchParams?: { city?: s
     <main className="app-shell">
       <section className="hero-panel" aria-labelledby="title">
         <div className="hero-copy">
-          <p className="eyebrow">Kunatu weather intelligence</p>
+          <p className="eyebrow">Kunatu · Yan public beta</p>
           <h1 id="title">{snapshot.city.name}</h1>
           <p className="region">{snapshot.city.region}</p>
           <p className="lede">
-            A first operational forecast layer for Sri Lanka. Data is forecast guidance, not an official warning.
+            Island weather guidance for Sri Lanka, tuned for rain, wind, and practical movement. This is not an official warning.
           </p>
         </div>
 
@@ -96,10 +96,10 @@ export default async function Home({ searchParams }: { searchParams?: { city?: s
           <span className="rain-line c" />
         </div>
         <div>
-          <p className="eyebrow">Design track</p>
-          <h2 id="atmosphere-title">Atmospheric layer next</h2>
+          <p className="eyebrow">Map track</p>
+          <h2 id="atmosphere-title">Rain layer next</h2>
           <p>
-            The next build round should turn this placeholder into a meaningful rain, wind, and uncertainty layer.
+            The next build round should turn this panel into a meaningful rain, wind, and uncertainty layer for the island.
           </p>
         </div>
       </section>

@@ -22,13 +22,13 @@ In Vercel project `kunatu`:
 2. Add domain: `kunatu.yan.lk`.
 3. Vercel should request a DNS record for the `yan.lk` zone.
 
-Expected Vercel DNS target for a subdomain is usually:
+Vercel is currently verified through this DNS record:
 
 ```text
-cname.vercel-dns.com
+CNAME kunatu.yan.lk 3a5d0f81cc2b2ea2.vercel-dns-017.com
 ```
 
-Use the exact value Vercel shows if it differs.
+Use the exact value Vercel shows if it differs in a future inspection.
 
 ## Cloudflare DNS Step
 
@@ -36,7 +36,7 @@ In the Cloudflare zone for `yan.lk`, add:
 
 | Type | Name | Target | Proxy | TTL |
 |---|---|---|---|---|
-| CNAME | `kunatu` | `cname.vercel-dns.com` | DNS only | Auto |
+| CNAME | `kunatu` | `3a5d0f81cc2b2ea2.vercel-dns-017.com` | DNS only | 10 min |
 
 Start with DNS-only to avoid certificate/proxy ambiguity while Vercel verifies the domain. Cloudflare proxying can be revisited later.
 
