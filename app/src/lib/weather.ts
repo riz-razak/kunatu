@@ -1,3 +1,5 @@
+import { buildGuidance, type GuidanceSuggestion } from "./guidance";
+
 export type City = {
   id: string;
   name: string;
@@ -38,6 +40,7 @@ export type WeatherSnapshot = {
   current: CurrentWeather;
   hourly: HourlyForecast[];
   advisory: AdvisorySignal;
+  guidance: GuidanceSuggestion[];
   source: string;
   fetchedAt: string;
 };
@@ -186,6 +189,7 @@ export async function fetchWeather(city: City): Promise<WeatherSnapshot> {
     current,
     hourly,
     advisory: buildAdvisory(current, hourly),
+    guidance: buildGuidance(current, hourly),
     source: "Open-Meteo forecast API",
     fetchedAt: new Date().toISOString(),
   };
